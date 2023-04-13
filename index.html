@@ -170,18 +170,3 @@
         }
     };
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Code kiểm tra IP -->
-<script>
-$(document).ready(function() {
-  // Lấy thông tin IP từ API của ipapi.com
-  $.getJSON('https://ipapi.co/json/', function(data) {
-    // Kiểm tra quốc gia của IP
-    if (data.country_code !== 'VN') {
-      // Chuyển hướng trang web sang trang khác
-      window.location.replace('https://example.com');
-    }
-  });
-});
-</script>
