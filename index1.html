@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <meta charset="UTF-8">
+  <meta name="description" content="Homepage of vkhacuti.info">
+  <meta name="author" content="Vkhacutis1">
+  <meta name="keywords" content="phanvankha .site, Phan Văn Kha, Vkha.info, info phan văn kha">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <link rel="shortcut icon" href="https://i.imgur.com/4lSyggf.jpg" type="image/x-icon">
+  <title>API | Phan Văn Kha</title>
+  <link rel="stylesheet" href="./assets/css/home.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js' type='text/javascript'></script>
+</head>
+<body onclick="audio.play()">
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">VanKhadev</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Tìm kiếm...">
+         <span class="tooltip">Tìm kiếm</span>
+      </li>
+      <li>
+        <a href="../">
+          <i class='bx bx-home-alt'></i>
+          <span class="links_name">Back Home</span>
+        </a>
+         <span class="tooltip">Về trang chủ</span>
+      </li>
+      <li>
+        <a href="./t/tool-facebook">
+          <i class='bx bxl-facebook' ></i>
+          <span class="links_name">Tool Facebook</span>
+        </a>
+        <span class="tooltip">Trang thủ thuật facebook</span>
+      </li>
+     <li>
+       <a href="https://t.me/ThanhDieuVirus">
+         <i class='bx bxs-virus'></i>
+         <span class="links_name">Virus Android</span>
+       </a>
+       <span class="tooltip">Chia sẽ phần mềm độc hại Android</span>
+     </li>
+     <li>
+       <a onclick="LuaGameguardian()">
+         <i class='bx bxs-alarm-off'></i>
+         <span class="links_name">Lua Gameguardian</span>
+       </a>
+       <span class="tooltip">Chia sẽ thủ thuật Gameguardian</span>
+     </li>
+     <li>
+      <a onclick="SourceCodeWebsite()">
+        <i class='bx bxl-codepen'></i>
+        <span class="links_name">Source Code Website</span>
+      </a>
+      <span class="tooltip">Mã nguồn trang website</span>
+    </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Setting</span>
+       </a>
+       <span class="tooltip">Cài đặt trang website</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <div class="name_job">
+             <div class="name">ThanhDieuDesign</div>
+             <div class="job">Theme Template</div>
+           </div>
+         </div>
+         <a  href="../" ><i class='bx bx-log-out' id="log_out" ></i></a>
+     </li>
+    </ul>
+  </div>
+      <section class="nav">
+        <h1>WELCOME TO</h1>
+        <h3 class="span loader"><span class="m">PH</span><span class="m">A</span><span class="m">N</span><span class="m"></span><span class="m"></span>
+          <span class="m">VAN  </span><span class="m">K</span><span class="m">H</span><span class="m">A</span>
+          <span class="m">D</span><span class="m">E</span><span class="m">V</span><span class="m">E</span><span class="m">L</span><span class="m">O</span><span class="m">P</span><span class="m">E</span><span class="m">R</span><span class="m"><!--</span--></span></h3>
+    </section>
+  <script>
+
+var audio = new Audio('http://nguyenvanvy.site/files/khi-anh-qua-thung-lung.mp3');
+      
+      audio.oncanplaythrough = function(){
+      audio.play();
+      }
+      
+      audio.loop = true;
+      
+      audio.onended = function(){
+      audio.play();
+      }
+   
+    fireSweetAlert();
+    
+        function fireSweetAlert() {
+            Swal.fire(
+                'Vkhacutis1',
+                'Welcome to my website !',
+                'success'
+            )
+        }
+    
+    
+      </script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
+
